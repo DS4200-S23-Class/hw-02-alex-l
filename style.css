@@ -1,0 +1,46 @@
+style.css
+
+body { font-family: 'Arial';	
+	
+}
+
+h1 {text-align: center;}
+
+#col1 { color:blue;
+
+}
+#col2 { color:blue;
+	
+}
+#col3 { color:blue;
+	
+}
+
+
+h3 {text-align: left;}
+
+.flex-container {
+	text-align: center; }
+
+.rect {
+	fill: purple;
+	opacity: 1;
+}
+
+.rect:hover {
+	fill: pink;
+	opacity: 1;
+}
+
+.circle:hover {
+	stroke: black;
+}
+
+#decoration {
+	width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between
+}
+
+
