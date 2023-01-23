@@ -59,11 +59,32 @@
             <h1>Data Types</h1>
             <!-- Data contains a bunch of attributes-->
             <h3>UFO</h3>
-                <p>Attributes</p>
+                <p>Columns: datetime, city, state, country, shape, duration(seconds)</p>
+                <p>Rows: items</p>
+                <p>- datetime:
+                        datatype: attributes(quantitative)</p>
+                <p>- city:
+                        datatype: attributes(categorical)</p>
+                <p>- state:
+                        datatype: attributes(categorical) </p>
+                <p>- country:
+                        datatype: attributes(categorical)</p>
+                <p>- shape:
+                        datatype: attributes(categorical)</p>
+                <p>- duration(seconds):
+                        datatype: attributes(quantitative)</p>
 
                 <!-- Data contains coordinates(lat, lon)-->
             <h3>Airports</h3>
-                <p>Position</p>
+                <p>Columns: Airport_name, Latitude, Longitude</p>
+                <p>Rows: items</p>
+                <p>- Airport_name: 
+                        datatype: attribute(categorical)</p>
+                <p>- Latitude:
+                        datatype: position</p>
+                <p>- Longitude: 
+                        datatype: position</p>
+
 
                 <!-- Data contains a source and a target-->
             <h3>Google-Web</h3>
@@ -78,14 +99,23 @@
     <h1>Task Abstraction</h1>
 
     <div class="flex-container">
-        <!-- The <img> tag displays an image using the filepath of the png-->
-        <img src='/hw-02-alex-l/img/vis1.png' alt='Vis1' width="600", height="500">
-        <img src='/hw-02-alex-l/img/vis2.png' alt='Vis2' width="600", height="500">
-        <p id='vis1'> High level: 
-            Medium level:
-            Low level:
-        </p>
-
+        <div id='img1'>
+            <!-- The <img> tag displays an image using the filepath of the png-->
+            <img src='/Users/alexlee/Downloads/DataScience/DS4200/hw-02-alex-l/img/vis1.png' alt='Vis1' width="500", height="500">
+            <p id='vis1'> 
+                High level: 
+                Medium level:
+                Low level:
+            </p>
+        </div>
+        <div id='img2'>
+            <img src='/Users/alexlee/Downloads/DataScience/DS4200/hw-02-alex-l/img/vis2.png' alt='Vis2' width="500", height="500">
+              <p id='vis2'> 
+                High level: 
+                Medium level:
+                Low level:
+            </p>
+        </div>   
     </div>
 </div>
 
