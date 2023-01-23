@@ -2,13 +2,118 @@
 <html> 
 
 <head>
+    <!-- Link the css sheet to style the html-->
+    <link rel="stylesheet" href="style.css">
     <meta charset=utf-8/>
+
+    <!-- Title the browser-->
+<title>hw-02</title>
 </head>
 
 
 <body>
 
+<!-- Create a div that contains all the data of our data file-->
+<div id='data-abstraction' class=>
 
+    <!-- Create a div that holds the table -->
+    <div class='info'>
+        <h1>Dataset Types</h1>
+
+        <!-- Column 1 = Data name, Column 2 = link of the filepath Column 3 = The dataset type-->
+        <table border = 1>
+            <tr>
+                <th id='col1'>Data</th>
+                <th id='col2'>Link</th>
+                <th id='col3'>Dataset Types</th>
+            </tr>
+            <tr>
+                <td>UFO</td>
+                <td> 
+                    <!-- The <a> tag links the filepath of a file-->
+                    <a href='/Users/alexlee/Downloads/DataScience/DS4200/hw-02-alex-l/data/UFO.csv' >Link</a> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>Airports</td>
+                <td> 
+                    <a href='/Users/alexlee/Downloads/DataScience/DS4200/hw-02-alex-l/data/Airports.csv' >Link</a> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>Google-Web</td>
+                <td> 
+                    <a href='/Users/alexlee/Downloads/DataScience/DS4200/hw-02-alex-l/data/Google-Web.txt' >Link</a> 
+                </td>
+            </tr>
+        </table>
+
+        <!-- Creates a dic that displays the data types of each of the files-->
+        <div class='info'>
+            <h1>Data Types</h1>
+            <!-- Data contains a bunch of attributes-->
+            <h3>UFO</h3>
+                <p>Attributes</p>
+
+                <!-- Data contains coordinates(lat, lon)-->
+            <h3>Airports</h3>
+                <p>Position</p>
+
+                <!-- Data contains a source and a target-->
+            <h3>Google-Web</h3>
+                <p>Link</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- Creates a div that displays 2 images from the img file-->
+<div id='task-abstraction'>
+    <h1>Task Abstraction</h1>
+
+    <div class="flex-container">
+        <!-- The <img> tag displays an image using the filepath of the png-->
+        <img src='/Users/alexlee/Downloads/DataScience/DS4200/hw-02-alex-l/img/vis1.png' alt='Vis1' width="600", height="500">
+        <img src='/Users/alexlee/Downloads/DataScience/DS4200/hw-02-alex-l/img/vis2.png' alt='Vis2' width="600", height="500">
+
+    </div>
+</div>
+
+<div id='decoration'>
+<svg class='circle' width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke-width="4" fill="blue" opacity=".5"/>
+</svg>
+
+<svg class='rect' width="400" height="100">
+  <rect width="300" height="100" stroke="black" stroke-width="3"/>
+</svg>
+
+<svg class='circle' width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke-width="4" fill="blue" opacity=".5"/>
+</svg>
+
+<svg class='rect' width="400" height="100">
+  <rect width="300" height="100" stroke="black" stroke-width="3"/>
+</svg>
+
+<svg class='circle' width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke-width="4" fill="blue" opacity=".5"/>
+</svg>
+
+<svg class='rect' width="400" height="100">
+  <rect width="300" height="100" stroke="black" stroke-width="3"/>
+</svg>
+</div>
+<h2 id='acknowledgements'>Acknowledgements</h2>
+<div>
+    <p>
+        -https://stackoverflow.com/questions/19157122/css-change-fill-color-on-hover-svg-path
+        - https://www.w3schools.com/graphics/svg_intro.asp
+
+    </p>
+</div>
 </body>
 
 </html>
