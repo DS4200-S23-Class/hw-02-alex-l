@@ -15,7 +15,22 @@ h1 {text-align: center;}
 #col3 { color:blue;
 	
 }
+#img1.center {
 
+}
+#img2.center {
+	text-align:center;
+}
+img {
+	text-align: center;
+}
+#vis1 {
+	text-align: left;
+}
+
+#vis2 {
+	text-align: left;
+}
 
 h3 {text-align: left;}
 
@@ -41,6 +56,12 @@ h3 {text-align: left;}
     height: 100vh;
     display: flex;
     justify-content: space-between
+
+    lineitems
+    flepwrap
+    flex-direction
+    display
+    justify-content
 }
 
 
