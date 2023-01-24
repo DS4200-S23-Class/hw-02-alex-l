@@ -33,7 +33,7 @@
                     <!-- The <a> tag links the filepath of a file-->
                     <a href='/hw-02-alex-l/data/UFO.csv' >Link</a> 
                 </td>
-                <td>Attributes</td>
+                <td>Tables</td>
             </tr>
 
             <tr>
@@ -41,7 +41,7 @@
                 <td> 
                     <a href='/hw-02-alex-l/data/Airports.csv' >Link</a> 
                 </td>
-                <td>Position</td>
+                <td>Geometry</td>
             </tr>
 
             <tr>
@@ -49,7 +49,7 @@
                 <td> 
                     <a href='/hw-02-alex-l/data/Google-Web.txt' >Link</a> 
                 </td>
-                <td>Link</td>
+                <td>Networks</td>
 
             </tr>
         </table>
@@ -88,7 +88,12 @@
 
                 <!-- Data contains a source and a target-->
             <h3>Google-Web</h3>
-                <p>Link</p>
+                <p>Columns: FromNodeID, ToNodeId</p>
+                <p>Rows: items</p>
+                <p>- FromNodeId:
+                        datatype: link</p>
+                <p>- ToNodeId:
+                        datatype: link</p>
 
         </div>
     </div>
@@ -99,8 +104,9 @@
     <h1>Task Abstraction</h1>
 
     <div class="flex-container">
-        <div id='img1'>
+        <!-- Create two divs, 1 for image 1 and the explanations and the other for image 2 and those explanations-->
             <!-- The <img> tag displays an image using the filepath of the png-->
+        <div id='img1'>
             <img src='/hw-02-alex-l/img/vis1.png' alt='Vis1' width="500", height="500">
             <p class='vis1'> 
                 High level: Discover, because the user is discovering something new about temperatures in Vancouver.
@@ -111,49 +117,65 @@
             <p class='vis1'>
                 Low level: Compare, because the visual is comparing the last 3 days to all the previous max temps of Vancouver.
             </p>
+            <p class='vis1'>
+                Targets: The target would be outliers. The visual compares highest temperatures of vancouver over a period of time vs the last 3 days and all of them are significantly above the average suggesting they're outliers.
+
+            </p>
         </div>
         <div id='img2'>
-            <img src='/hw-02-alex-l/img/vis2.png' alt='Vis2' width="500", height="500">
-              <p id='vis2'> 
+            <img src='/hw-02-alex-l/img/vis2.png' alt='Vis2' width="650", height="500">
+            <p class='vis2'> 
                 High level: 
+            </p>
+            <p class='vis2'>
                 Medium level:
+            </p>
+            <p class='vis2'>
                 Low level:
             </p>
-        </div>   
+            <p class='vis2'>
+                Targets:
+            </p>
+        </div>
+         
     </div>
 </div>
 
+<!-- Create a div that holds svgs(circle, rect ...)-->
 <div id='decoration'>
-<svg class='circle' width=200 height="100">
-  <circle cx="150" cy="50" r="40" stroke-width="4" fill="blue" opacity=".5"/>
-</svg>
+    <svg class='circle' width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke-width="4" fill="blue" opacity=".5"/>
+    </svg>
 
-<svg class='rect' width=250 height="100">
-  <rect x=125 y=0 width="100" height="100" stroke="black" stroke-width="3"/>
-</svg>
+    <svg class='rect' width="200" height="100">
+      <rect width="200" height="100" stroke="black" stroke-width="3"/>
+    </svg>
 
-<svg class='circle' width=200 height="100">
-  <circle cx="150" cy="50" r="40" stroke-width="4" fill="blue" opacity=".5"/>
-</svg>
+    <svg class='circle' width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke-width="4" fill="blue" opacity=".5"/>
+    </svg>
 
-<svg class='rect' width=250 height="100">
-  <rect x=125 y=0 width="100" height="100" stroke="black" stroke-width="3"/>
-</svg>
+    <svg class='rect' width="200" height="100">
+      <rect width="200" height="100" stroke="black" stroke-width="3"/>
+    </svg>
 
-<svg class='circle' width=200 height="100">
-  <circle cx="150" cy="50" r="40" stroke-width="4" fill="blue" opacity=".5"/>
-</svg>
+    <svg class='circle' width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke-width="4" fill="blue" opacity=".5"/>
+    </svg>
 
-<svg class='rect' width=250 height="100">
-  <rect x=125 y=0 width="100" height="100" stroke="black" stroke-width="3"/>
-</svg>
+    <svg class='rect' width="200" height="100">
+      <rect width="200" height="100" stroke="black" stroke-width="3"/>
+    </svg>
 </div>
+
+<!-- Sources used to help with the assignment-->
 <h2 id='acknowledgements'>Acknowledgements</h2>
 <div>
     <p>
         -https://stackoverflow.com/questions/19157122/css-change-fill-color-on-hover-svg-path
+    </p>
+    <p>
         - https://www.w3schools.com/graphics/svg_intro.asp
-
     </p>
 </div>
 </body>
