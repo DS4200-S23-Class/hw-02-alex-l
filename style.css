@@ -1,49 +1,52 @@
 style.css
 
-body { font-family: 'Arial';	
-	
+body { 
+	font-family: 'Arial';	
 }
 
-h1 {text-align: center;}
-
-#col1 { color:blue;
-
-}
-#col2 { color:blue;
-	
-}
-#col3 { color:blue;
-	
-}
-#img1.center {
-
-}
-#img2.center {
-	text-align:center;
-}
-img {
+h1 {
 	text-align: center;
 }
-#vis1 {
-	text-align: left;
+
+#col1 { 
+	color:blue;
 }
 
-#vis2 {
-	text-align: left;
+#col2 { 
+	color:blue;
 }
 
-h3 {text-align: left;}
+#col3 { 
+	color:blue;
+}
+
+h3 {
+	text-align: left;
+}
 
 .flex-container {
-	text-align: center; }
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	display: flex;
+	align-items: normal;
+}
 
+.vis1 {
+	color: green;
+}
+
+.vis2 {
+	color: green;
+	
+}
 .rect {
 	fill: purple;
 	opacity: 1;
 }
 
 .rect:hover {
-	fill: pink;
+	fill: orange;
 	opacity: 1;
 }
 
@@ -52,16 +55,10 @@ h3 {text-align: left;}
 }
 
 #decoration {
-	width: 98vw;
-    height: 100vh;
     display: flex;
-    justify-content: space-between
-
-    lineitems
-    flepwrap
-    flex-direction
-    display
-    justify-content
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
 
